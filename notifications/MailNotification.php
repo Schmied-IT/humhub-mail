@@ -9,6 +9,7 @@
 
 namespace humhub\modules\mail\notifications;
 
+use humhub\modules\mail\models\MessageEntry;
 use humhub\modules\notification\components\BaseNotification;
 
 class MailNotification extends BaseNotification
@@ -19,5 +20,15 @@ class MailNotification extends BaseNotification
     public function category()
     {
         return new MailNotificationCategory();
+    }
+
+    public function html()
+    {
+        /** @var MessageEntry $source */
+        $source = $this->source;
+
+        /** @var User $user */
+        $user = $source->getUser()->one();
+        return "<b>#{$source->message->title} ({$user->getDisplayName()}):</b> {$source->content}";
     }
 }

@@ -16,8 +16,8 @@ class NotificationInbox extends Widget
      */
     public function run()
     {
-        return $this->render('notificationInbox', [
-            'newMailMessageCount' => UserMessage::getNewMessageCount()
+        return $this->render('notificationInboxAssetsOnly', [
+            // 'newMailMessageCount' => UserMessage::getNewMessageCount()
         ]);
     }
 }

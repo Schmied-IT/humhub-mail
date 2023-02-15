@@ -156,7 +156,7 @@ class Events
                 return;
             }
 
-            // $event->sender->addWidget(NotificationInbox::className(), [], ['sortOrder' => 90]); //christian.schmied@schmied-it.de
+            $event->sender->addWidget(NotificationInbox::className(), [], ['sortOrder' => 90]); //christian.schmied@schmied-it.de
         } catch (\Throwable $e) {
             Yii::error($e);
         }
