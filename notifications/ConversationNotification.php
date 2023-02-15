@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link https://www.humhub.org/
  * @copyright Copyright (c) 2017 HumHub GmbH & Co. KG
@@ -8,7 +9,6 @@
 
 namespace humhub\modules\mail\notifications;
 
-
 use humhub\modules\notification\components\BaseNotification;
 
 class ConversationNotification extends BaseNotification
@@ -17,5 +17,4 @@ class ConversationNotification extends BaseNotification
     {
         return new ConversationNotificationCategory();
     }
-
 }

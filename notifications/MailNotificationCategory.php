@@ -18,18 +18,8 @@ class MailNotificationCategory extends NotificationCategory
 {
     public $id = 'mail';
 
-    public function getFixedSettings()
-    {
-        $webTarget = Yii::createObject(WebTarget::class);
-        $mobileTarget = Yii::createObject(MobileTarget::class);
-        return [
-            $webTarget->id,
-            $mobileTarget->id
-        ];
-    }
-
     /**
-     * Returns a human readable title of this  category
+     * Returns a human readable title of this category
      */
     public function getTitle()
     {

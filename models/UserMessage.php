@@ -88,7 +88,7 @@ class UserMessage extends ActiveRecord
             $userId = Yii::$app->user->id;
         }
 
-        if($userId instanceof User) {
+        if ($userId instanceof User) {
             $userId = $userId->id;
         }
 
@@ -103,14 +103,13 @@ class UserMessage extends ActiveRecord
             $userId = Yii::$app->user->id;
         }
 
-        if($userId instanceof User) {
+        if ($userId instanceof User) {
             $userId = $userId->id;
         }
 
         return static::find()->joinWith('message')
             ->where(['user_message.user_id' => $userId])
             ->orderBy('message.updated_at DESC');
-
     }
 
     public function isUnread($userId = null)
@@ -119,7 +118,7 @@ class UserMessage extends ActiveRecord
             $userId = Yii::$app->user->id;
         }
 
-        if($this->message->lastEntry && ($this->message->lastEntry->user_id === $userId)) {
+        if ($this->message->lastEntry && ($this->message->lastEntry->user_id === $userId)) {
             return false;
         }
 

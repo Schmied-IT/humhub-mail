@@ -1,23 +1,29 @@
 {
     "id": "mail",
-    "name": "Mail",
+    "name": "Schmied-IT Mail",
     "description": "A private messaging system for direct communication",
-    "keywords": ["mail", "messaging", "communication"],
+    "keywords": [
+        "mail",
+        "messaging",
+        "communication"
+    ],
     "version": "2.1.1",
     "humhub": {
         "minVersion": "1.10"
     },
-    "homepage": "https://github.com/humhub/humhub-modules-mail",
+    "homepage": "https://github.com/Schmied-IT/humhub-mail",
     "authors": [
         {
             "name": "Andreas Strobel"
         },
-
         {
             "name": "Lucas Bartholemy"
         },
-
-        {   "name": "Julian Harrer"
+        {
+            "name": "Julian Harrer"
+        },
+        {
+            "name": "Christian Schmied"
         }
     ],
     "screenshots": [
