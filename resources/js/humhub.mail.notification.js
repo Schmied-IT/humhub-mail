@@ -44,21 +44,21 @@ humhub.module('mail.notification', function(module, require, $) {
     };
 
     var updateCount = function() {
-        client.get(module.config.url.count).then(function(response) {
+        /*client.get(module.config.url.count).then(function(response) {
             setMailMessageCount(parseInt(response.newMessages));
-        });
+        });*/
     };
 
     var setMailMessageCount = function(count) {
         // show or hide the badge for new messages
-        var $badge = $('#badge-messages');
+       /* var $badge = $('#badge-messages');
         if (!count || count == '0') {
             $badge.css('display', 'none');
         } else {
             $badge.empty();
             $badge.append(count);
             $badge.fadeIn('fast');
-        }
+        }*/
     };
 
     var loadMessage = function (evt) {
