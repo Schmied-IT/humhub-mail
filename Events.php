@@ -141,7 +141,7 @@ class Events
                     'url' => Url::toMessenger(),
                     'icon' => '<i class="fa fa-envelope"></i>',
                     'isActive' => (Yii::$app->controller->module && Yii::$app->controller->module->id == 'mail'),
-                    'sortOrder' => 300,
+                    'sortOrder' => 50,  //christian.schmied@schmied-it.de
                 ]);
             }
         } catch(\Throwable $e) {
